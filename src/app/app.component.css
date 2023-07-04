@@ -1,0 +1,14 @@
+.centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 10vh;
+}
+
+.bar-div {
+  height: 50vh; 
+  width: 300vh;
+}
+
+

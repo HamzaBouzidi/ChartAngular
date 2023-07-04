@@ -1,0 +1,16 @@
+selected names:  {{selectedOptions}}
+
+<div class="centered-div">
+  <!-- <select [(ngModel)]="selectedOption" (change)="updateChartData()">
+    <option *ngFor="let name of names">{{ name }}</option>
+  </select> -->
+<!-- <p>{{ [selectedOption]}}</p> -->
+<ng-select [multiple]="true" [(ngModel)]="selectedOptions" (change)="updateChartData()">
+   <ng-option *ngFor="let name of names" [value]="name">{{name}}</ng-option>
+</ng-select>
+<canvas  id="MyChart" >{{ Chart }}</canvas>
+
+
+
+
+
